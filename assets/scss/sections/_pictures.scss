@@ -1,0 +1,132 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+
+.pictures {
+    width: 100%;
+    margin-bottom: 15%;
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 910;
+        position: relative;
+
+        .picture {
+            position: absolute;
+            width: 100%;
+        }
+
+        .flower {
+            max-width: 80px;
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+
+        .flower_left {
+            top: 27%;
+            left: 0%;
+            z-index: 8;
+        }
+
+        .flower_right {
+            top: 33%;
+            left: 41%;
+            z-index: 5;
+        }
+
+        .flower_pic04 {
+            max-width: 91px;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 4%;
+            left: 45%;
+            z-index: 7;
+        }
+
+        .picture01 {
+            max-width: 220px;
+            aspect-ratio: 240 / 310;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/1.webp') no-repeat center / cover;
+            top: 12%;
+            left: 8%;
+            transform: rotate(10deg);
+        }
+
+        .picture02 {
+            max-width: 220px;
+            aspect-ratio: 280 / 345;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/2.webp') no-repeat center / cover;
+            top: 22%;
+            left: 52%;
+            z-index: 4;
+            transform: rotate(-15deg);
+        }
+
+        .picture03 {
+            max-width: 209px;
+            aspect-ratio: 209 / 271;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/3.webp') no-repeat center / cover;
+            top: 41%;
+            left: 18%;
+            z-index: 6;
+            transform: rotate(5deg);
+        }
+
+        .picture04 {
+            max-width: 205px;
+            width: 100%;
+            aspect-ratio: 262 / 332;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/4.webp') no-repeat center / cover;
+            top: 71%;
+            left: 10%;
+            z-index: 7;
+            transform: rotate(-20deg); 
+        }
+
+        .picture05 {
+            max-width: 220px;
+            aspect-ratio: 266 / 359;
+            background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/5.webp') no-repeat center / cover;
+            top: 60%;
+            left: 50%;
+            transform: rotate(15deg); 
+        }
+
+        @media (max-width: 500px) {
+            .flower {
+                max-width: calc((80 / 500) * 100vw);
+            }
+    
+            .flower_pic04 {
+                max-width: calc((91 / 500) * 100vw);
+            }
+
+            .picture01 {
+                max-width: calc((220 / 500) * 100vw);
+                .flower {
+                    max-width: calc((80 / 500) * 100vw);
+                }
+            }
+    
+            .picture02 {
+                max-width: calc((220 / 500) * 100vw);
+            }
+    
+            .picture03 {
+                max-width: calc((209 / 500) * 100vw);
+            }
+    
+            .picture04 {
+                max-width: calc((205 / 500) * 100vw);
+                .flower_pic04 {
+                    max-width: calc((91 / 500) * 100vw);
+                }
+            }
+    
+            .picture05 {
+                max-width: calc((220 / 500) * 100vw);
+            }
+        }
+    }
+}

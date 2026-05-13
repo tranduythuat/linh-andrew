@@ -1,0 +1,163 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.timeline {
+    width: 100%;
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 1128;
+        background: url('../../assets/images/g1150.png') no-repeat 50% 10% / contain, linear-gradient(to bottom, rgb(224, 167, 114), rgb(224, 167, 114), rgb(224, 167, 114), rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0)) ,url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/couple/IMG_0156%202.webp') no-repeat bottom / contain
+        ;
+        background-color: #e0a872ff;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: white;
+        .title {
+            font-family: $font-DK-Cool-Crayonr;
+            font-size: 38px;
+            font-weight: 300;
+            margin-top: 12%;
+            margin-bottom: 5%;
+        }
+        .wax {
+            position: absolute;
+            top: -4%;
+            max-width: 86px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .group-item {
+        width: 100%;
+        margin-bottom: 2%;
+        .group-title {
+            font-family: $font-lora;
+            font-size: 22px;
+            margin-bottom: 1%;
+        }
+        .items {
+            margin-top: 5%;
+            width: 100%;
+            .item {
+                margin-bottom: 4%;
+                .icon {
+                    @include flex-center;
+                    margin-bottom: 1%;
+                    img {
+                        max-width: 28px;
+                        width: 100%;
+                        height: auto
+                    }
+                }
+                .time {
+                    @include flex-center;
+                    font-size: 12px;
+                }
+    
+                &:nth-of-type(2) .icon img {
+                    max-width: 34px;
+                }
+    
+                // &:nth-of-type(4) .icon img {
+                //     max-width: 28px;
+                // }
+    
+                // &:nth-of-type(5) .icon img {
+                //     max-width: 28px;
+                // }
+            }
+        }
+    }
+
+    .dresscode {
+        margin-top: 15%;
+        .title {
+            margin-bottom: 2%;
+        }
+        .palette {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0;
+
+            .swatch {
+                max-width: 31px;
+                aspect-ratio: 1;
+                width: 100%;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.401);
+                margin: 0 -4px;
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .text-img {
+        margin-top: 16%;
+        perspective: 500px;
+        margin-bottom: 5%;
+        img {
+            max-width: 104px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .title {
+                font-size: calc((38 / 500) * 100vw);
+            }
+
+            .wax {
+                max-width: calc((86 / 500) * 100vw);
+            }
+        }
+        
+        .group-item {
+            .group-title {
+                font-size: calc((22 / 500) * 100vw);
+            }
+            .items {
+                .item {
+                    .icon {
+                        img {
+                            max-width: calc((28 / 500) * 100vw);
+                        }
+                    }
+                    .time {
+                        font-size: calc((12 / 500) * 100vw);
+                    }
+
+                    &:nth-of-type(2) .icon img {
+                        max-width: calc((34 / 500) * 100vw);
+                    }
+                }
+            } 
+        }
+
+        .dresscode {
+            .palette {
+                .swatch {
+                    max-width: calc((31 / 500) * 100vw);
+                }
+            }
+        }
+
+        .text-img {
+            img {
+                max-width: calc((104 / 500) * 100vw);
+            }
+        }
+    }
+}
