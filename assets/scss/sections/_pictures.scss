@@ -13,6 +13,7 @@
         .picture {
             position: absolute;
             width: 100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
         }
 
         .flower {
@@ -58,7 +59,7 @@
             aspect-ratio: 280 / 345;
             background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/2.webp') no-repeat center / cover;
             top: 22%;
-            left: 52%;
+            left: 49%;
             z-index: 4;
             transform: rotate(-15deg);
         }

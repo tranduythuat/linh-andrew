@@ -337,7 +337,6 @@ section {
   width: 100%;
   background: url("../../assets/images/IMG_3962.GIF") no-repeat 50% 8%/100%;
   font-size: 13.5px;
-  padding-top: 18%;
   padding-bottom: 20%;
 }
 .invite .content .welcome {
@@ -353,7 +352,6 @@ section {
 }
 .invite .content .couple-image {
   perspective: 1000px;
-  margin-bottom: 16%;
   position: relative;
 }
 .invite .content .couple-image img {
@@ -694,6 +692,7 @@ section {
 .pictures .content .picture {
   position: absolute;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .pictures .content .flower {
   max-width: 80px;
@@ -733,7 +732,7 @@ section {
   aspect-ratio: 280/345;
   background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/2.webp") no-repeat center/cover;
   top: 22%;
-  left: 52%;
+  left: 49%;
   z-index: 4;
   transform: rotate(-15deg);
 }
@@ -818,6 +817,7 @@ section {
   line-height: 1.5;
   margin-bottom: 3%;
   color: #503b28;
+  text-transform: uppercase;
 }
 .rsvp .content .rsvp-form .button-group {
   display: grid;
