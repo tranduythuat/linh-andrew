@@ -342,10 +342,11 @@ section {
 }
 @media (max-width: 500px) {
   .hero .content .logo img {
-    max-width: 7.2vw;
+    max-width: 10.6vw;
   }
-  .hero .content .couple-name img {
-    max-width: 80vw;
+  .hero .content .couple-name {
+    max-width: 66.8vw;
+    font-size: 13.6vw;
   }
   .hero .content .date .time {
     font-size: 3.2vw;

@@ -75,13 +75,12 @@
         @media (max-width: 500px) {
             .logo {
                 img {
-                    max-width: calc((36 / 500) * 100vw);
+                    max-width: calc((53 / 500) * 100vw);
                 }
             }
             .couple-name {
-                img {
-                    max-width: calc((400 / 500) * 100vw);
-                }
+                max-width: calc((334 / 500) * 100vw);
+                font-size: calc((68 / 500) * 100vw);
             }
             .date {
                 .time {
