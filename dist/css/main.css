@@ -273,8 +273,8 @@ section {
 }
 .hero {
   width: 100%;
-  aspect-ratio: 500/880;
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/couple/IMG_0155.webp") no-repeat center/cover;
+  aspect-ratio: 500/731;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/couple/couple01.png") no-repeat center/cover;
 }
 .hero .content {
   width: 100%;
@@ -283,15 +283,43 @@ section {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .hero .content .logo {
   perspective: 500px;
   margin-top: 8%;
 }
 .hero .content .logo img {
-  max-width: 36px;
+  max-width: 53px;
   width: 100%;
   height: auto;
+}
+.hero .content .couple-name {
+  position: absolute;
+  top: 22%;
+  font-family: "1FTV-VIP-DK-Cool-Crayon", sans-serif;
+  font-size: 68px;
+  color: #fff;
+  max-width: 334px;
+  width: 100%;
+  aspect-ratio: 334/130;
+}
+.hero .content .couple-name .wife-name {
+  text-align: left;
+}
+.hero .content .couple-name .husband-name {
+  text-align: right;
+}
+.hero .content .gif-img {
+  margin-bottom: 70%;
+  position: relative;
+  left: -4%;
+  bottom: -5%;
+}
+.hero .content .gif-img img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.6);
 }
 .hero .content .date {
   color: white;
@@ -426,7 +454,6 @@ section {
 }
 .invite .content .map-img {
   position: relative;
-  left: -4%;
 }
 .invite .content .map-img img {
   max-width: 408px;

@@ -3,10 +3,10 @@
 
 .hero {
     width: 100%;
-    aspect-ratio: 500 / 880;
+    aspect-ratio: 500 / 731;
     background: 
     // url('../../assets/images/IMG_5293.GIF') no-repeat 52% 63% / 164%,
-    url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/couple/IMG_0155.webp') no-repeat center / cover;
+    url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-andrew/couple/couple01.png') no-repeat center / cover;
     .content {
         width: 100%;
         height: 100%;
@@ -14,23 +14,44 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        position: relative;
         .logo {
             perspective: 500px;
             margin-top: 8%;
             img {
-                max-width: 36px;
+                max-width: 53px;
                 width: 100%;
                 height: auto;
             }
         }
-        // .couple-name {
-        //     margin-bottom: 70%;
-        //     img {
-        //         max-width: 400px;
-        //         width: 100%;
-        //         height: auto;
-        //     }
-        // }
+        .couple-name {
+            position: absolute;
+            top: 22%;
+            font-family: $font-DK-Cool-Crayonr;
+            font-size: 68px;
+            color: #fff;
+            max-width: 334px;
+            width: 100%;
+            aspect-ratio: 334 / 130;
+            .wife-name {
+                text-align: left;
+            }
+            .husband-name {
+                text-align: right;
+            }
+        }
+        .gif-img {
+            margin-bottom: 70%;
+            position: relative;
+            left: -4%;
+            bottom: -5%;
+            img {
+                // max-width: 400px;
+                width: 100%;
+                height: auto;
+                transform: scale(1.6);
+            }
+        }
         .date {
             color: white;
             margin-bottom: 8%;
